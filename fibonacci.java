@@ -1,23 +1,15 @@
-import java.util.Scanner;
-
 public class fibonacci {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        int n = 10;
+        long a = 0, b = 1;
 
-        int n;
-        int a = 0;
-        int b = 1;
-        int siguiente;
-
-        System.out.print("Ingrese la cantidad de terminos: ");
-        n = sc.nextInt();
-
-        for (int i = 1; i <= n; i++) {
+        System.out.println("Los primeros " + n + " términos de la serie de Fibonacci:");
+        for (int i = 0; i < n; i++) {
             System.out.print(a + " ");
-
-            siguiente = a + b;
+            long siguiente = a + b;
             a = b;
             b = siguiente;
         }
+        System.out.println();
     }
 }

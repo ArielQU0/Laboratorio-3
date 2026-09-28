@@ -1,0 +1,5 @@
+git pull
+git switch -c nombre-de-rama
+git add .
+git commit -m "mensaje"
+git push origin nombre-de-rama
